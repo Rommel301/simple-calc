@@ -110,6 +110,7 @@ button[type="signup"] {
     cursor: pointer;
     font-size: 16px;
     transition: border-color 0.3s;
+    margin-top: 20px;
 }
 
 /* styles for buttons */

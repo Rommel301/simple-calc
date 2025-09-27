@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* styles contact form */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+/* Body background and layout */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #4e54c8;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #8f94fb, #4e54c8);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #8f94fb, #4e54c8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+
+/* Container for form */
+.container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 700px;
+}
+
+/* Header */
+.h2form {
+    text-align: center;
+    margin-bottom: 12px;
+    font-size: 25px;
+    color: #000;
+}
+
+/* paragraph */
+.paragraph {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #10375C;
+}
+
+label {
+    font-size: 12px;
+    color: #000;
+}
+
+/* Para sa pag-layout ng mga input fields sa isang linya */
+.input-row {
+    display: flex; /* Gamitin ang flexbox para ilagay ang mga element sa iisang linya */
+    gap: 20px;  /* Maglagay ng 20px na espasyo sa pagitan ng mga element */
+    margin-bottom: 20px;    /* Maglagay ng puwang sa ibaba ng row */
+    flex-wrap: wrap;   /* Kung kulang ang espasyo, ilalagay sa susunod na linya */
+}
+
+/* Para sa bawat input + label*/
+.input-group {
+    flex: 1; /* Parehong laki ang bawat input group sa loob ng row */ 
+    min-width: 250px;   /* Hindi bababa sa 200px ang lapad ng input field */ 
+    
+}
+
+/* Para sa estilo ng mga input at text area */ 
+input,
+textarea {
+    width: 100%;   /* Palaparin ang input para sakupin ang buong lapad ng parent */
+    padding: 16px; /* Espasyo sa loob ng input box */
+    font-size: 16px;
+    margin-top: 6px;  /* Kaunting puwang sa itaas ng input */
+    border: 1px solid #ccc;   /* Kulay abong border */
+    border-radius: 6px;  /* Pabilugin nang bahagya ang mga kanto ng input */
+    box-sizing: border-box;     /* Isama ang padding at border sa lapad */
+    transition: border-color 0.3s; /* Makinis na transition kapag nagbago ang kulay ng border */
+}
+/* nagadjust ng laki */
+textarea {
+    height: 150px; /* lakihan ang height */
+}
+
+/* nagadjust ng comments */
+.comment {
+    font-weight: 500;
+    font-size: 13px;
+}
+
+/* styles for buttons */
+button[type=submit] {
+    width: 100%;
+    background-color: #17594A;
+    color: #fff;
+    padding: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: border-color 0.3s;
+    margin-top: 55px;
+}
+
+/* styles for buttons hover */
+button[type=submit]:hover {
+    background-color: #000;
+
+}
+
+
+
+
+
